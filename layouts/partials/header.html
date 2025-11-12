@@ -1,0 +1,11 @@
+<header>
+  <div class="container">
+    <div class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></div>
+    <nav>
+    {{ $current := . }}
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
+    </nav>
+  </div>
+</header>

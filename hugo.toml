@@ -1,0 +1,19 @@
+baseURL = "https://<mon-user>.github.io/<mon-site-hugo>/"
+languageCode = "fr"
+title = "Mon site"
+paginate = 10
+defaultContentLanguage = "fr"
+enableRobotsTXT = true
+
+[params]
+  description = "Site Hugo minimal (sans thème)"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    name = "À propos"
+    url = "/about/"
+    weight = 2
