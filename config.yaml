@@ -5,7 +5,10 @@ languageCode: "fr"
 defaultContentLanguage: "fr"
 paginate: 10
 enableRobotsTXT: true
-canonifyURLs: true
+
+# Important pour un dépôt projet GitHub Pages (liens corrects sous /gbsite.github.io/)
+relativeURLs: true
+canonifyURLs: false
 
 params:
   env: production
@@ -20,13 +23,13 @@ params:
     subtitle: "Courte présentation ou slogan."
     buttons:
       - name: "CV"
-        url: "/cv/"
+        url: "cv/"
       - name: "Papers"
-        url: "/papers/"
+        url: "papers/"
       - name: "Personal Projects"
-        url: "/personal-projects/"
+        url: "personal-projects/"
       - name: "Blog"
-        url: "/posts/"
+        url: "posts/"
 
   socialIcons:
     - name: "GitHub"
@@ -38,19 +41,19 @@ menu:
   main:
     - identifier: cv
       name: "CV"
-      url: "/cv/"
+      url: "cv/"
       weight: 10
     - identifier: papers
       name: "Papers"
-      url: "/papers/"
+      url: "papers/"
       weight: 20
     - identifier: projects
       name: "Personal Projects"
-      url: "/personal-projects/"
+      url: "personal-projects/"
       weight: 30
     - identifier: blog
       name: "Blog"
-      url: "/posts/"
+      url: "posts/"
       weight: 40
 
 mainSections: ["posts"]
