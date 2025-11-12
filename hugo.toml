@@ -1,4 +1,4 @@
-baseURL = "https://<mon-user>.github.io/<mon-site-hugo>/"
+baseURL = "https://116500LN.github.io/gbsite.github.io/"
 languageCode = "fr"
 title = "Mon site"
 paginate = 10
