@@ -1,18 +1,22 @@
-# Mon site — Hugo minimal (sans thème)
+# Hugo + PaperMod — Starter pour `116500LN/gbsite.github.io`
 
-## Étapes (GitHub Pages, 1 minute)
+Ce paquet contient uniquement les fichiers nécessaires pour publier un site Hugo **PaperMod** via GitHub Actions,
+avec l'architecture : Accueil (profile mode) + CV / Papers / Personal Projects / Blog.
 
-1. **Téléversez** tout le contenu de ce dossier à la racine de votre dépôt.
-2. Ouvrez `hugo.toml` et remplacez la valeur de `baseURL` par votre URL Github Pages :
-   `https://<mon-user>.github.io/<mon-site-hugo>/` (gardez le `/` final).
-3. Dans **Settings → Pages** de votre repo, mettez **"Build and deployment" → Source = GitHub Actions**.
-4. Poussez sur la branche `main`. L'action *Deploy Hugo to GitHub Pages* va construire puis publier.
-5. Votre site sera disponible à l'URL `baseURL` après le déploiement.
+## Déploiement (2–3 minutes)
+1. Uploadez **tous ces fichiers à la racine** du dépôt `116500LN/gbsite.github.io` (remplacez les fichiers existants).  
+   > S'il existe `hugo.toml` dans le dépôt, **supprimez-le** pour éviter les conflits (on utilise `config.yaml`).
+2. Dans **Settings → Pages → Build and deployment → Source**, sélectionnez **GitHub Actions**.
+3. Faites un commit sur `main`. Le workflow build & déploie automatiquement.
 
-## Modifier le contenu
+URL finale : **https://116500LN.github.io/gbsite.github.io/**
 
-- Accueil : `content/_index.md`
-- Blog : `content/blog/`
-- À propos : `content/about/`
+## Personnalisation
+- Modifiez `config.yaml` : titre, sous-titre, liens des boutons d'accueil, réseaux sociaux, etc.
+- Ajoutez vos pages dans `content/` :
+  - Blog : `content/posts/`
+  - Projets : `content/personal-projects/`
+  - CV : `content/cv/`
+  - Papers : `content/papers/`
 
-Aucun thème n'est utilisé ; les gabarits HTML sont dans `layouts/`.
+Bon déploiement !

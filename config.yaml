@@ -1,0 +1,65 @@
+baseURL: "https://116500LN.github.io/gbsite.github.io/"
+title: "Mon site"
+theme: "PaperMod"
+languageCode: "fr"
+defaultContentLanguage: "fr"
+paginate: 10
+enableRobotsTXT: true
+canonifyURLs: true
+
+params:
+  env: production
+  defaultTheme: auto
+  showReadingTime: true
+  showPostNavLinks: true
+  showBreadCrumbs: true
+
+  profileMode:
+    enabled: true
+    title: "Votre Nom"
+    subtitle: "Courte présentation ou slogan."
+    buttons:
+      - name: "CV"
+        url: "/cv/"
+      - name: "Papers"
+        url: "/papers/"
+      - name: "Personal Projects"
+        url: "/personal-projects/"
+      - name: "Blog"
+        url: "/posts/"
+
+  socialIcons:
+    - name: "GitHub"
+      url: "https://github.com/116500LN"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/"
+
+menu:
+  main:
+    - identifier: cv
+      name: "CV"
+      url: "/cv/"
+      weight: 10
+    - identifier: papers
+      name: "Papers"
+      url: "/papers/"
+      weight: 20
+    - identifier: projects
+      name: "Personal Projects"
+      url: "/personal-projects/"
+      weight: 30
+    - identifier: blog
+      name: "Blog"
+      url: "/posts/"
+      weight: 40
+
+mainSections: ["posts"]
+
+permalinks:
+  posts: "/posts/:slug/"
+  personal-projects: "/personal-projects/:slug/"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
